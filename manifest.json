@@ -1,0 +1,24 @@
+{
+   "app": {
+      "launch": {
+         "local_path": "index.html"
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "thinlib.js", "l7race.js" ],
+      "matches": [ "http://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "description": "Retrogame inspired in Speedway, an old game released for Odyssey 2.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD1vk7maW18Ix9mB43QDLlV25YR5NEPLb2aXIUrbomQUHh1bZuVG89aaf5Y/bXQnm1JFkuhmdbX2R5UikrWkUAXSCgmu+6JdznfqIZUuTxm4nsvj3FpAo0n+cVxSaHt4HzQpPbmNGZieU9WwnrcuyTSEWqPP58mQTDycR4Jofu8hQIDAQAB",
+   "manifest_version": 2,
+   "name": "L7 Race",
+   "offline_enabled": true,
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.5",
+   "web_accessible_resources": [ "thinlib.js", "l7race.js", "abstracto.js" ]
+}
